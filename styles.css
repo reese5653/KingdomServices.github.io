@@ -197,40 +197,49 @@ body {
     color: var(--text-dark);
 }
 
-.services-grid {
+.services-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
-.service-card {
+.services-column {
     background: var(--white);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+.services-column h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
 }
 
-.service-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.services-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.services-list li {
     color: var(--text-dark);
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
 }
 
-.service-card p {
-    color: var(--text-light);
-    line-height: 1.6;
+.services-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
@@ -381,7 +390,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .services-grid {
+    .services-categories {
         grid-template-columns: 1fr;
     }
 }
