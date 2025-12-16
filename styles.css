@@ -85,11 +85,18 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    position: relative;
+    background: linear-gradient(180deg, rgba(18, 63, 138, 0.6) 0%, rgba(11, 35, 82, 0.82) 100%), url('Kingdom%20Services.png') center/cover no-repeat;
     color: var(--white);
     padding: 150px 0 100px;
     margin-top: 70px;
     text-align: center;
+    isolation: isolate;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
