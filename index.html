@@ -8,145 +8,207 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>Call us: (555) 123-4567</span>
+            <span>Hours: Mon-Fri 8:00AM - 5:00PM</span>
+            <a href="#contact">Request service</a>
+        </div>
+    </div>
+
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">Kingdom Services</div>
+        <div class="container nav-inner">
+            <a class="logo" href="#home">Kingdom Services</a>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#residents">Services</a></li>
+                <li><a href="#learning">Learning Center</a></li>
+                <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-ghost">Get Help</a>
+                <div class="hamburger" aria-label="Toggle navigation" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Welcome to Kingdom Services</h1>
-                <p>Excellence in every service we provide</p>
-                <a href="#contact" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>At Kingdom Services, we're committed to delivering exceptional quality and professionalism in everything we do. With years of experience and a dedication to customer satisfaction, we've built a reputation as a trusted partner for businesses and individuals alike.</p>
-                    <p>Our team of experts brings passion, skill, and attention to detail to every project, ensuring your needs are not just met, but exceeded.</p>
+    <header id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <p class="eyebrow">Reliable property support for homes and businesses</p>
+                <h1>Clean, safe, affordable service for every project.</h1>
+                <p class="lead">We keep your property moving forward with dependable cleanup, repairs, and maintenance when you need them most.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">Request a Quote</a>
+                    <a href="#residents" class="btn btn-outline">Explore Services</a>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>500+</h3>
-                        <p>Happy Clients</p>
-                    </div>
-                    <div class="stat">
-                        <h3>10+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Satisfaction Rate</p>
+                <div class="hero-highlights">
+                    <div><strong>24/7</strong><span>support availability</span></div>
+                    <div><strong>Fast</strong><span>turnaround time</span></div>
+                    <div><strong>Trusted</strong><span>local service team</span></div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-panel">
+                    <img src="Kingdom%20Services.png" alt="Kingdom Services" class="hero-panel-image">
+                    <div class="hero-panel-body">
+                        <p class="panel-kicker">Fast, dependable service</p>
+                        <h2>Exterior cleanup, repairs, and property maintenance.</h2>
+                        <div class="panel-tags">
+                            <span>Exterior</span>
+                            <span>Interior</span>
+                            <span>Landscaping</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-categories">
-                <div class="services-column">
-                    <h3>OUTSIDE</h3>
-                    <ul class="services-list">
-                        <li>Gutters Cleaned</li>
-                        <li>Leaf Mulching and Removal</li>
-                        <li>Fences Cleared</li>
-                        <li>Down Trees and Branches Cleaned Up</li>
-                        <li>Driveways and Sidewalks Cleared</li>
-                        <li>Brush Cleared</li>
-                        <li>Flower Beds</li>
-                        <li>Irrigation Systems</li>
-                        <li>Tractor Work</li>
-                        <li>Bush Hogging</li>
-                    </ul>
+    <main>
+        <section id="residents" class="quick-links">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow dark">Everything you need in one place</p>
+                    <h2>Choose the service path that fits your project.</h2>
                 </div>
-                <div class="services-column">
-                    <h3>INSIDE</h3>
-                    <ul class="services-list">
-                        <li>Painting</li>
-                        <li>Drains Cleared</li>
-                        <li>Faucets Changed</li>
-                        <li>Light Plumbing Work</li>
-                        <li>Roof Leaks Repaired</li>
-                        <li>Decks repaired, replaced, and built</li>
-                        <li>Custom Shelving</li>
-                        <li>Drywall Repair</li>
-                        <li>Tile and Flooring Work</li>
-                        <li>LED Lighting Installed</li>
-                        <li>Window Replacement</li>
-                        <li>Door Replacement</li>
-                    </ul>
+                <div class="quick-link-grid">
+                    <article class="quick-card">
+                        <h3>For Residents</h3>
+                        <p>Home cleanup, repairs, and seasonal property help.</p>
+                        <a href="#services">Learn more</a>
+                    </article>
+                    <article class="quick-card">
+                        <h3>For Businesses</h3>
+                        <p>Reliable maintenance and support for business properties.</p>
+                        <a href="#services">Learn more</a>
+                    </article>
+                    <article class="quick-card">
+                        <h3>New Construction</h3>
+                        <p>Site prep, access, and cleanup support for active builds.</p>
+                        <a href="#services">Learn more</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
+        <section id="services" class="services accent-band">
+            <div class="container">
+                <div class="section-heading compact">
+                    <p class="eyebrow dark">What we do</p>
+                    <h2>Property services built around clear communication and fast action.</h2>
+                </div>
+                <div class="services-cards">
+                    <article class="service-card">
+                        <h4>Exterior Maintenance</h4>
+                        <p>Gutters, debris removal, brush clearing, driveways, and outdoor cleanup.</p>
+                    </article>
+                    <article class="service-card">
+                        <h4>Interior Repairs</h4>
+                        <p>Painting, drywall, plumbing fixes, lighting, and general handyman work.</p>
+                    </article>
+                    <article class="service-card">
+                        <h4>Land and Site Support</h4>
+                        <p>Tractor work, bush hogging, flower beds, and irrigation system support.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="learning" class="learning">
+            <div class="container learning-grid">
+                <div class="learning-feature">
+                    <p class="eyebrow dark">Learning center</p>
+                    <h2>Helpful guidance before, during, and after the job.</h2>
+                    <p>Simple updates, checklists, and service tips to help you stay prepared and informed.</p>
+                    <a href="#contact" class="btn btn-primary">Talk to our team</a>
+                </div>
+                <div class="tip-card">
+                    <span>Tip of the week</span>
+                    <h3>Plan outdoor work after weather clears for the best cleanup results.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="container">
+                <div class="section-heading compact">
+                    <p class="eyebrow dark">News & updates</p>
+                    <h2>Recent updates and community-ready information.</h2>
+                </div>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-date">APR 23</div>
+                        <h3>Spring cleanup support now available</h3>
+                        <p>Exterior maintenance scheduling is open for homeowners and businesses.</p>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-date">APR 21</div>
+                        <h3>New project requests are being accepted</h3>
+                        <p>We are taking quote requests for repairs, cleanup, and land support.</p>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-date">FEB 24</div>
+                        <h3>Routine maintenance keeps properties moving</h3>
+                        <p>Preventive care helps reduce downtime and keep sites looking their best.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-band">
+            <div class="container help-grid">
+                <div>
+                    <p class="eyebrow">Need help now?</p>
+                    <h2>We are here to keep your project on track.</h2>
+                </div>
+                <div class="help-actions">
+                    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                    <a href="#services" class="btn btn-outline dark">View Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container contact-grid">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="info-item">
-                        <strong>Email:</strong> info@kingdomservices.com
-                    </div>
-                    <div class="info-item">
-                        <strong>Phone:</strong> (555) 123-4567
-                    </div>
-                    <div class="info-item">
-                        <strong>Address:</strong> 123 Business St, Suite 100<br>City, State 12345
-                    </div>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" aria-label="Twitter">Twitter</a>
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                    </div>
+                    <p class="eyebrow dark">Contact</p>
+                    <h2>Reach out for service questions or a project estimate.</h2>
+                    <p>Send us the basics and we’ll follow up quickly with the next steps.</p>
+                    <div class="info-item"><strong>Email:</strong> info@kingdomservices.com</div>
+                    <div class="info-item"><strong>Phone:</strong> (555) 123-4567</div>
+                    <div class="info-item"><strong>Hours:</strong> Mon-Fri 8:00AM - 5:00PM</div>
                 </div>
+
                 <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <div class="form-row">
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Kingdom Services. All rights reserved.</p>
+        <div class="container footer-inner">
+            <div>
+                <strong>Kingdom Services</strong>
+                <p>Residential and commercial support with a clean, dependable process.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#residents">Services</a>
+                <a href="#learning">Learning Center</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </footer>
 
