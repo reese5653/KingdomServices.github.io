@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNavbar();
     window.addEventListener('scroll', updateNavbar);
 
-    const revealTargets = document.querySelectorAll('.quick-card, .service-card, .news-card, .tip-card, .learning-feature, .contact-form, .stat');
+    const revealTargets = document.querySelectorAll('.quick-card, .service-card, .gallery-card, .news-card, .tip-card, .learning-feature, .contact-form, .stat');
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -59,5 +59,62 @@ document.addEventListener('DOMContentLoaded', () => {
     revealTargets.forEach(el => {
         el.classList.add('pre-reveal');
         observer.observe(el);
+    });
+
+    const setupCarousel = (carouselElement, delay = 3500) => {
+        const track = carouselElement.querySelector('.gallery-track');
+        const slides = track ? Array.from(track.querySelectorAll('.gallery-card')) : [];
+        const dots = carouselElement.querySelector('.gallery-dots');
+
+        if (!track || !slides.length) return;
+
+        let currentIndex = 0;
+        let rotateTimer;
+
+        const setActiveSlide = (index) => {
+            const nextIndex = ((index % slides.length) + slides.length) % slides.length;
+            currentIndex = nextIndex;
+            track.style.transform = `translateX(-${nextIndex * 100}%)`;
+
+            if (dots) {
+                Array.from(dots.children).forEach((dot, dotIndex) => {
+                    dot.classList.toggle('active', dotIndex === nextIndex);
+                });
+            }
+        };
+
+        if (dots) {
+            dots.innerHTML = '';
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'gallery-dot';
+                dot.setAttribute('aria-label', `Show slide ${index + 1}`);
+                dot.addEventListener('click', () => {
+                    setActiveSlide(index);
+                    restartRotation();
+                });
+                dots.appendChild(dot);
+            });
+        }
+
+        const restartRotation = () => {
+            clearInterval(rotateTimer);
+            rotateTimer = setInterval(() => {
+                setActiveSlide(currentIndex + 1);
+            }, delay);
+        };
+
+        setActiveSlide(0);
+        restartRotation();
+
+        carouselElement.addEventListener('mouseenter', () => clearInterval(rotateTimer));
+        carouselElement.addEventListener('mouseleave', restartRotation);
+        window.addEventListener('focus', restartRotation);
+        window.addEventListener('blur', () => clearInterval(rotateTimer));
+    };
+
+    document.querySelectorAll('.gallery-carousel, .board-carousel').forEach(carousel => {
+        setupCarousel(carousel, carousel.classList.contains('board-carousel') ? 3300 : 3500);
     });
 });
