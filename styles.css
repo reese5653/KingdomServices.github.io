@@ -468,13 +468,12 @@ a {
   font-size: 0.86rem;
 }
 
-.quick-links,
-.services,
-.gallery,
-.learning,
-.news,
-.help-band,
-.contact {
+quick-links,
+services,
+gallery,
+learning,
+help-band,
+contact {
   padding: 72px 0;
 }
 
@@ -483,8 +482,7 @@ a {
 }
 
 .quick-link-grid,
-.services-cards,
-.news-grid {
+.services-cards {
   display: grid;
   gap: 18px;
 }
@@ -495,7 +493,6 @@ a {
 
 .quick-card,
 .service-card,
-.news-card,
 .tip-card {
   border-radius: 20px;
   background: #fff;
@@ -518,7 +515,6 @@ a {
 
 .quick-card p,
 .service-card p,
-.news-card p,
 .learning-feature p,
 .contact-info p,
 .footer-inner p {
@@ -715,28 +711,8 @@ a {
   margin-bottom: 18px;
 }
 
-.news-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.news-card {
-  padding: 22px;
-  border: 1px solid #e6eef7;
-}
-
-.news-date {
-  width: fit-content;
-  background: #eff5ff;
-  color: var(--primary-dark);
-  font-weight: 800;
-  font-size: 0.84rem;
-  padding: 8px 12px;
-  margin-bottom: 14px;
-}
-
-.news-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 8px;
+.news-grid { /* removed: News section deleted from markup */
+  display: none;
 }
 
 .help-band {
@@ -838,7 +814,6 @@ a {
 .gallery-card,
 .quick-card,
 .service-card,
-.news-card,
 .tip-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -846,7 +821,6 @@ a {
 .gallery-card:hover,
 .quick-card:hover,
 .service-card:hover,
-.news-card:hover,
 .tip-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.11);
@@ -957,7 +931,6 @@ a {
   .quick-link-grid,
   .services-cards,
   .gallery-grid,
-  .news-grid,
   .stats-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1018,7 +991,6 @@ a {
   .hero-highlights,
   .quick-link-grid,
   .services-cards,
-  .news-grid,
   .form-row {
     grid-template-columns: 1fr;
   }

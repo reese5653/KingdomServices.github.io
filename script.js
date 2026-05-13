@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNavbar();
     window.addEventListener('scroll', updateNavbar);
 
-    const revealTargets = document.querySelectorAll('.quick-card, .service-card, .gallery-card, .news-card, .tip-card, .learning-feature, .contact-form, .stat');
+    const revealTargets = document.querySelectorAll('.quick-card, .service-card, .gallery-card, .tip-card, .learning-feature, .contact-form, .stat');
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
