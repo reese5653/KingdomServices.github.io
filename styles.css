@@ -401,12 +401,11 @@ a {
 /* Background image for the services section */
 .services {
   background-image: url("Landscaping.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(11, 47, 102, 0.45);
-  background-blend-mode: overlay;
-  color: #fff;
+  background-color: transparent;
+  color: var(--text);
 }
 
 .about-grid {
