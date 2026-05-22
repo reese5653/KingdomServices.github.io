@@ -493,7 +493,10 @@ contact {
 }
 
 .quick-links {
-  background: #fff;
+  background-image: linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)), url("Bathroom remodel.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .quick-link-grid,
