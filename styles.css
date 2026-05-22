@@ -139,6 +139,12 @@ a {
   color: var(--primary-dark);
 }
 
+.site-logo {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
 .nav-menu {
   list-style: none;
   display: flex;
