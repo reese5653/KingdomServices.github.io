@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -43,7 +43,7 @@ h4,
 .tip-card span,
 .news-date,
 .quick-card a {
-  font-family: 'Space Grotesk', 'Source Sans 3', system-ui, sans-serif;
+  font-family: 'Libre Franklin', 'Source Sans 3', system-ui, sans-serif;
 }
 
 img {
@@ -211,6 +211,10 @@ a {
   color: var(--text);
 }
 
+.about-page .btn-outline.dark {
+  color: #fff;
+}
+
 .btn-ghost {
   background: #eef5ff;
   color: var(--primary-dark);
@@ -223,6 +227,7 @@ a {
   background: linear-gradient(90deg, #0b2f66 0%, #123f81 44%, #dbe6f2 100%);
   color: #fff;
 }
+
 
 .hero::before {
   content: '';
