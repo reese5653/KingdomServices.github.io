@@ -499,6 +499,26 @@ contact {
   background-repeat: no-repeat;
 }
 
+.social-pages-section {
+  background: linear-gradient(135deg, #0b2f66 0%, #123f81 58%, #1f7ae0 100%);
+  color: #fff;
+}
+
+.social-pages-section .eyebrow.dark,
+.social-pages-section .section-heading h2 {
+  color: #fff;
+}
+
+.social-pages-section .quick-card {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.social-pages-section .quick-card h3,
+.social-pages-section .quick-card p {
+  color: var(--text);
+}
+
 .quick-link-grid,
 .services-cards {
   display: grid;
@@ -546,6 +566,15 @@ contact {
   font-weight: 800;
   padding: 10px 14px;
   text-decoration: none;
+}
+
+.social-pages-section .quick-card a {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.social-pages-section .quick-card a:hover {
+  background: var(--primary-dark);
 }
 
 .accent-band {
